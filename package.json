@@ -31,5 +31,9 @@
       }
     ]
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "gsap": "^3.12.1",
+    "particles.js": "^2.0.0"
+  }
 }

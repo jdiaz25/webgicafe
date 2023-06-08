@@ -1,17 +1,100 @@
-body {
-  font-family: sans-serif;
-  overflow: hidden;
+
+@font-face {
+  font-family: "Carnas";
+  src: url("../assets/fonts/Carnas-Regular.otf");
+  font-weight: 400;
 }
+@font-face {
+  font-family: "Carnas";
+  src: url("../assets/fonts/Carnas-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Carnas";
+  src: url("../assets/fonts/Carnas-Bold.otf");
+  font-weight: 700;
+}
+html,
+body {
+  font-family: "Carnas";
+  background: -webkit-gradient(linear, left top, left bottom, from(#002d59), color-stop(102%, #0051a2));
+  background: linear-gradient(180deg, #002d59 0%, #0051a2 102%);
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  padding: 0
+}
+.logo{
+  position: fixed;
+  top: -84px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.reveal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  
+}
+.reveal h2 {
+  font-size: 64px;
+  color: #fff;
+  max-width: 600px;
+  padding: 0 10%;
+  font-weight: bold;
+}
+.reveal h2 span {
+  color: #ffc03c;
+}
+.reveal .gs_reveal_fromLeft {
+  margin-right: auto;
+  text-align: left;
+}
+.reveal .gs_reveal_fromRight {
+  margin-left: auto;
+  text-align: right;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
 #webgi-canvas {
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
+
 }
 #webgi-canvas-container{
-  width: 80vw;
-  height: 80vh;
-  margin: 10vh 10vw;
-  border-radius: 0.5rem;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  pointer-events: none;
+}
 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+#tweakpaneUiContainer{
+  display: none;
+}
+.gs_reveal_fromCenter{
+  text-align: center;
+  max-width: 900px!important;
+  transform: translateY(-150px);
 }

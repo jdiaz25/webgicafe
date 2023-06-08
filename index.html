@@ -8,11 +8,39 @@
 </head>
 
 <body>
+
+	<img src="./assets/images/logo.svg" class="logo" alt="">
+	<div id="particles-js"></div>
+	<section class="reveal first">
+		<h2 class="section--one--container gs_reveal_fromCenter">Aprende de <span>Marketing de Reputación</span> con los
+			expertos</h2>
+	</section>
+
+	<section class="reveal second">
+		<h2 class="section--two--container gs_reveal_fromRight">Gana la <span>confianza</span> de tus clientes</h2>
+	</section>
+
+	<section class="reveal third">
+		<h2 class="section--third--container gs_reveal_fromLeft">Lleva tu <span>marca personal</span> al siguiente nivel
+		</h2>
+	</section>
+
+
+
 	<div id="webgi-canvas-container">
 		<canvas id="webgi-canvas"></canvas>
 	</div>
 
 	<script src="src/index.ts" type="module"></script>
+
+	<script src="
+	https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+	"></script>
+	<script>
+		particlesJS.load('particles-js', 'assets/js/particles.json', function () {
+			console.log('callback - particles.js config loaded');
+		});
+	</script>
 </body>
 
 </html>
